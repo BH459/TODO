@@ -1,0 +1,95 @@
+body{
+    overflow-x: hidden;
+}
+#inputreleted{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+gap: 2rem;
+margin-top: 1rem;
+}
+#titlereleted{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1{
+ font-size: 3.5rem;
+ font-family:'Courier New', Courier, monospace ;
+ text-decoration: underline;
+}
+input{
+  height: 2rem;
+  width: 30vw;
+  border-radius: 1rem;
+  border: 0.15rem solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+input::placeholder{
+    font-size: 1rem;
+    padding: 0.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#add_btn{
+    height: 4.4rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: 0.15rem solid black;
+    transition: all ease 0.5s;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: rgb(21, 0, 255);
+    color: white;
+}
+button:active{
+    scale: 0.8;
+}
+#output{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#o_display{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: gray;
+    border-radius: 1rem;
+}
+#o_display #o_h2{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+#o_p{
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+#removebtn{
+    height: 2rem;
+    font-size: large;
+    border-radius: 0.4rem;
+    border: 2px solid black;
+}
+@media (max-width: 1250px) {
+    #inputreleted{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    input{
+        width: 55vw;
+    }
+}
